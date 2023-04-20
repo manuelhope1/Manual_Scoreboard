@@ -1,15 +1,19 @@
-import epl from '../images/epl.png';
+
+import React from 'react'
+import League from './League';
+
 
 
 export default function Top(){
+        
     return (
         <div className="top">
             <div className="live">
                 <span className="dot"></span>Live
             </div>
             <div className="league">
-                <img src={epl} className="clogo" />
-                <p>English Premier League</p>
+                <League/>
+                <input className='ileague'/>
             </div>
         </div>
     );
